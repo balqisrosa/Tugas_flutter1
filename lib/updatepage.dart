@@ -34,6 +34,7 @@ class UpdatePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Update Penjualan'),
+        backgroundColor: Color(0xFF84b8c6), // Mengatur warna latar belakang AppBar menjadi biru
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -41,7 +42,17 @@ class UpdatePage extends StatelessWidget {
           child: Container(
             width: 300, // Atur lebar kontainer sesuai kebutuhan
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center, // Memusatkan elemen di sumbu horizontal
               children: <Widget>[
+                // Menambahkan judul "Update Penjualan"
+                Text(
+                  'Update Penjualan',
+                  style: TextStyle(
+                    fontSize: 24, // Ukuran font untuk judul
+                    fontWeight: FontWeight.bold, // Ketebalan font
+                  ),
+                ),
+                SizedBox(height: 20), // Jarak antara judul dan form
                 TextField(
                   controller: _fakturController,
                   decoration: InputDecoration(labelText: 'No Faktur'),

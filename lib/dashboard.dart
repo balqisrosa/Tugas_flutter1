@@ -13,6 +13,15 @@ class DashboardPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start, // Posisi di atas
           children: [
+            // Menambahkan judul "Dashboard Penjualan"
+            Text(
+              'Dashboard Penjualan',
+              style: TextStyle(
+                fontSize: 24, // Ukuran font untuk judul
+                fontWeight: FontWeight.bold, // Ketebalan font
+              ),
+            ),
+            SizedBox(height: 20), // Jarak antara judul dan tabel
             Center( // Memusatkan tabel
               child: Container(
                 constraints: BoxConstraints(maxWidth: 800), // Batasi lebar maksimum tabel

@@ -9,6 +9,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Login'),
+        backgroundColor: Color(0xFF84b8c6), // Mengatur warna latar belakang AppBar menjadi biru
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -21,6 +22,15 @@ class LoginPage extends StatelessWidget {
                 width: 300, // Atur lebar kontainer sesuai kebutuhan
                 child: Column(
                   children: <Widget>[
+                    // Menambahkan judul "Login"
+                    Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 24, // Ukuran font untuk judul
+                        fontWeight: FontWeight.bold, // Ketebalan font
+                      ),
+                    ),
+                    SizedBox(height: 20), // Jarak antara judul dan form
                     TextField(
                       controller: _usernameController,
                       decoration: InputDecoration(labelText: 'Username'),
